@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+    <link rel="icon" href="title.png" type="image/icon type">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="uicons-regular-rounded.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js.js"></script>
+    <script src="https://kit.fontawesome.com/9fd97b7f3f.js" crossorigin="anonymous"></script>
+    <script data-search-pseudo-elements defer src="https://use.fontawesome.com/releases/latest/js/all.js" integrity="sha384-L469/ELG4Bg9sDQbl0hvjMq8pOcqFgkSpwhwnslzvVVGpDjYJ6wJJyYjvG3u8XW7" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="top-header">
+                <nav class="navbar navbar-expand-lg">
+                    <a href="#" class="navbar-brand"><img src="Brand.png" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                          <a class="nav-link on-page" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Product</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item left-bor-header">
+                            <form action="">
+                                <input type="search">
+                                <i class="fa fa-search"></i>
+                            </form>
+                        </li>
+                        <li class="nav-item dropdown left-bor-header">
+                            <a class="nav-link dropdown" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-shopping-bag"></i>
+                                <span class="cart-quantity">2</span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="#">Action</a>
+                              <a class="dropdown-item" href="#">Another action</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+            </div>
+        </header>
+        <section class="page-title">
+          <div class="container-fluid">
+            <div class="page-title-info text-center">
+                <h2>Product detail</h2>
+                <p><a href="#">Home</a><span style="padding: 0 10px;">\\</span><a href="#">Product</a></p>
+            </div>
+          </div>
+          <hr>
+          <div class="container">
+            <div class="row page-title-media justify-content-center">
+              <p>Share this page: <span style="padding: 0 10px;"></span>
+                <div class="page-title-media-icon"><a href="#"><i class="fab fa-facebook-f"></i></a></div>
+                <div class="page-title-media-icon"><a href="#"><i class="fab fa-google-plus-g"></i></a></div>
+                <div class="page-title-media-icon"><a href="#"><i class="fab fa-twitter"></i></a></div>
+              </p>
+            </div>
+          </div>
+        </section>
+        <main>
+          <section class="product-detail-wrap">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6 pro_detail_slide">
+                  <div id="pro_detail_carousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators row justify-content-around">
+                      <li class="col-3 w-100" data-target="#pro_detail_carousel" data-slide-to="0" class="active">
+                        <img src="img/pro_detail_main.jpg" class="w-100 d-block" alt="">
+                      </li>
+                      <li class="col-3 w-100" data-target="#pro_detail_carousel" data-slide-to="1">
+                        <img src="img/pro_detail_1.jpg" class="w-100 d-block" alt="">
+                      </li>
+                      <li class="col-3 w-100" data-target="#pro_detail_carousel" data-slide-to="2">
+                        <img src="img/pro_detail_2.jpg" class="w-100 d-block" alt="">
+                      </li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="img/pro_detail_main.jpg" alt="First slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="img/pro_detail_1.jpg" alt="Second slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="img/pro_detail_2.jpg" alt="Third slide">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#pro_detail_carousel" role="button" data-slide="prev">
+                      <span class="pro_detail_carousel_control">
+                        <i class="fas fa-chevron-left"></i>
+                      </span>
+                    </a>
+                    <a class="carousel-control-next" href="#pro_detail_carousel" role="button" data-slide="next">
+                      <span class="pro_detail_carousel_control">
+                        <i class="fas fa-chevron-right"></i>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-6 pro_detail_info">
+                  <div class="pro_detail_info_top">
+                    <strong class="pro_detail_info_top_name">
+                      Lemon ginger bundt cake
+                    </strong>
+                    <p class="pro_detail_info_top_rating">
+                      <span class="pro_detail_info_top_rating_yellow">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </span>
+                      <span class="pro_detail_info_top_rating_gray">
+                        <i class="fas fa-star"></i>
+                      </span>
+                      <span style="padding-left: 10px;"></span>
+                      1.249 Customer review
+                    </p>
+                    <p class="pro_detail_info_top_price" id="pro_detail_info_top_price">
+                      $7.00
+                    </p>
+                  </div>
+                  <hr>
+                  <div class="pro_detail_info_mid">
+                    <div class="pro_detail_info_mid_description">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </div>
+                    <div class="pro_detail_info_mid_product_detail">
+                      <p>
+                        <span class="pro_detail_info_mid_product_detail_dot">
+                          <i class="fas fa-circle"></i>
+                        </span>
+                        <span class="pro_detail_info_mid_product_detail_title">
+                          Origin: 
+                        </span>
+                        <span class="pro_detail_info_mid_product_detail_info">
+                          America 
+                        </span>
+                      </p>
+                      <p>
+                        <span class="pro_detail_info_mid_product_detail_dot">
+                          <i class="fas fa-circle"></i>
+                        </span>
+                        <span class="pro_detail_info_mid_product_detail_title">
+                          Status: 
+                        </span>
+                        <span class="pro_detail_info_mid_product_detail_info">
+                          In stock 
+                        </span>
+                      </p>
+                      <p>
+                        <span class="pro_detail_info_mid_product_detail_dot">
+                          <i class="fas fa-circle"></i>
+                        </span>
+                        <span class="pro_detail_info_mid_product_detail_title">
+                          Product code:
+                        </span>
+                        <span class="pro_detail_info_mid_product_detail_info">
+                          #a123456 
+                        </span>
+                      </p>
+                      <p>
+                        <span class="pro_detail_info_mid_product_detail_dot">
+                          <i class="fas fa-circle"></i>
+                        </span>
+                        <span class="pro_detail_info_mid_product_detail_title">
+                          Brand:
+                        </span>
+                        <span class="pro_detail_info_mid_product_detail_info pro_detail_info_mid_product_detail_info_brand">
+                          NBQ Entertainment
+                        </span>
+                      </p>
+                    </div>
+                    <hr>
+                  </div>
+                  <div class="pro_detail_info_bot row">
+                    <div class="col-lg-5 pro_detail_info_bot_amount row justify-content-around">
+                      <button class="pro_detail_info_bot_amount_change" onclick="decrease()">-</button>
+                      <p class="pro_detail_info_bot_amount_number text-center" id="pro_detail_info_bot_amount_number">1</p>
+                      <button class="pro_detail_info_bot_amount_change" onclick="increase()">+</button>
+                    </div>
+                    <div class="col-lg-7 pro_detail_info_bot_cart">
+                      <button class="pro_detail_info_bot_cart_add w-100"><i class="fas fa-shopping-bag"></i> <span style="padding-left: 10px;"></span> Add to cart</button>
+                    </div>
+                  </div>
+                  <div class="pro_detail_info_bot_tag">
+                    <p>Tag: <span>Lemon, bakery, cake, america</span></p>
+                    <p>Category: <span>Bread</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="product-detail-desc-review">
+            <div class="container">
+              <div class="product-detail-desc-review-nav">
+                <ul class="nav nav-tabs">
+                  <li class="active product-detail-desc-review-nav-desc show"><a data-toggle="tab" href="#product-detail-desc-cnt">Description</a></li>
+                  <li class="product-detail-desc-review-nav-rev"><a data-toggle="tab" href="#product-detail-rev-cnt">Reviews (1.249)</a></li>
+                </ul>
+              </div>
+              <div class="tab-content">
+                <div id="product-detail-desc-cnt" class="tab-pane active show fade in active">
+                  <strong class="product-detail-desc-cnt-title">
+                    Lemon ginger bundt cake
+                  </strong>
+                  <p class="product-detail-desc-cnt-info">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+                </div>
+                <div id="product-detail-rev-cnt" class="tab-pane fade">
+                  <div class="product-detail-rev-cnt-comment">
+                    <div class="row">
+                      <div class="col-1 product-detail-rev-cnt-comment-avt align-self-center">
+                        <img src="img/comment.png" class="w-100" alt="">
+                      </div>
+                      <div class="col-11 product-detail-rev-cnt-comment-detail">
+                        <div class="product-detail-rev-cnt-comment-avt-user">
+                          <p class="product-detail-rev-cnt-comment-avt-user-info">
+                            <strong class="product-detail-rev-cnt-comment-avt-user-name">
+                              <a href="#">Lê Văn Sin</a>
+                            </strong>
+                            <span class="product-detail-rev-cnt-comment-avt-user-date">  
+                              Jan 20, 2001
+                            </span>
+                            <span class="product-detail-rev-cnt-comment-avt-user-rate float-right">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                            </span>
+                          </p>
+                          <p class="product-detail-rev-cnt-comment-avt-user-comment">
+                            Your will my hands
+                          </p>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="col-1 product-detail-rev-cnt-comment-avt align-self-center">
+                        <img src="img/comment1.png" class="w-100" alt="">
+                      </div>
+                      <div class="col-11 product-detail-rev-cnt-comment-detail">
+                        <div class="product-detail-rev-cnt-comment-avt-user">
+                          <p class="product-detail-rev-cnt-comment-avt-user-info">
+                            <strong class="product-detail-rev-cnt-comment-avt-user-name">
+                              <a href="#">Da Xu Ô</a>
+                            </strong>
+                            <span class="product-detail-rev-cnt-comment-avt-user-date">  
+                              Jan 20, 2001
+                            </span>
+                            <span class="product-detail-rev-cnt-comment-avt-user-rate float-right">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                            </span>
+                          </p>
+                          <p class="product-detail-rev-cnt-comment-avt-user-comment">
+                            Cái chết như một cơn gió, luôn bên ta.
+                          </p>
+                        </div>
+                      </div>
+                      <hr>
+                    </div>
+                  </div>
+                  <div class="product-detail-rev-cnt-comment-add-rev">
+                    <strong class="product-detail-rev-cnt-comment-add-rev-title">
+                      Add a review
+                    </strong>
+                    <p class="product-detail-rev-cnt-comment-add-rev-head">
+                      Your email address will not be published. Required fields are marked <span style="color: #ff0000;">*</span>
+                    </p>
+                    <div class="row">
+                      <div class="col-2 align-self-center">
+                        <p class="product-detail-rev-cnt-comment-add-rev-head product-detail-rev-cnt-comment-add-rev-head-wr">
+                          Your rating
+                        </p>
+                      </div>
+                      <div class="col-10">
+                        <div id="rating">
+                          <input type="radio" id="star5" name="rating" value="5" />
+                          <label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                       
+                          <input type="radio" id="star4" name="rating" value="4" />
+                          <label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                       
+                          <input type="radio" id="star3" name="rating" value="3" />
+                          <label class = "full" for="star3" title="Meh - 3 stars"></label>
+                       
+                          <input type="radio" id="star2" name="rating" value="2" />
+                          <label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                       
+                          <input type="radio" id="star1" name="rating" value="1" />
+                          <label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                        </div>
+                      </div>
+                      <div class="col-2 align-self-start">
+                        <p class="product-detail-rev-cnt-comment-add-rev-head product-detail-rev-cnt-comment-add-rev-head-wr">
+                          Your review <span style="color: #ff0000;">*</span>
+                        </p>
+                      </div>
+                      <div class="col-10">
+                        <textarea name="" id="" class="w-100" rows="4"></textarea>
+                      </div>
+                      <div class="col-2 align-self-start">
+                        <p class="product-detail-rev-cnt-comment-add-rev-head product-detail-rev-cnt-comment-add-rev-head-wr">
+                          Your name <span style="color: #ff0000;">*</span>
+                        </p>
+                      </div>
+                      <div class="col-10">
+                        <input type="text" class="w-100" name="" id="">
+                      </div>
+                      <div class="col-2 align-self-start">
+                        <p class="product-detail-rev-cnt-comment-add-rev-head product-detail-rev-cnt-comment-add-rev-head-wr">
+                          Your email <span style="color: #ff0000;">*</span>
+                        </p>
+                      </div>
+                      <div class="col-10">
+                        <input type="email" class="w-100" id="">
+                      </div>
+                      <div class="col-10 offset-2">
+                        <button>Submit</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="product-detail-relate-prod">
+            <div class="container">
+              <strong class="product-detail-relate-prod-title">
+                Related product
+              </strong>
+              <div class="row">
+                <div class="product-detail-relate-prod-card col-lg-3 col-md-6">
+                  <div class="card w-100 text-center">
+                    <a href="#"><img class="card-img-top" src="img/banh-chung.jpg" alt="Card image cap"></a>
+                    <div class="card-body">
+                      <strong class="card-title"><a href="#">Banh Chung</a></strong>
+                      <p class="card-text">$11.00</p>
+                    </div>
+                  </div>                  
+                </div>
+                <div class="product-detail-relate-prod-card col-lg-3 col-md-6">
+                  <div class="card w-100 text-center">
+                    <a href="#"><img class="card-img-top" src="img/banh-chung.jpg" alt="Card image cap"></a>
+                    <div class="card-body">
+                      <strong class="card-title"><a href="#">Banh Chung</a></strong>
+                      <p class="card-text">$11.00</p>
+                    </div>
+                  </div>                  
+                </div>
+                <div class="product-detail-relate-prod-card col-lg-3 col-md-6">
+                  <div class="card w-100 text-center">
+                    <a href="#"><img class="card-img-top" src="img/banh-chung.jpg" alt="Card image cap"></a>
+                    <div class="card-body">
+                      <strong class="card-title"><a href="#">Banh Chung</a></strong>
+                      <p class="card-text">$11.00</p>
+                    </div>
+                  </div>                  
+                </div>
+                <div class="product-detail-relate-prod-card col-lg-3 col-md-6">
+                  <div class="card w-100 text-center">
+                    <a href="#"><img class="card-img-top" src="img/banh-chung.jpg" alt="Card image cap"></a>
+                    <div class="card-body">
+                      <strong class="card-title"><a href="#">Banh Chung</a></strong>
+                      <p class="card-text">$11.00</p>
+                    </div>
+                  </div>                  
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+        <footer>
+          <section class="head-footer">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-3 col-md-6">
+                  <div class="head-footer-title">
+                    <a href=""><img src="Brand.png" alt=""></a>
+                  </div>
+                  <p>ThemeMu comes with powerful theme options, which empowers you to quickly and easily build incredible
+                    store.</p>
+                  <div class=" row head-footer-social-media justify-content-around">
+                    <div class="circle">
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                    <div class="circle">
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <div class="circle">
+                      <a href="#"><i class="fab fa-vimeo-v"></i></a>
+                    </div>
+                    <div class="circle">
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="head-footer-title">
+                    <h2>Contact</h2>
+                  </div>
+                  <div class="head-footer-contact">
+                    <p><span><i class="fas fa-map-marker-alt"></i> Address: </span>105, B Block, West Street, London, BCA,
+                      UK</p>
+                    <p><span><i class="fas fa-phone-alt"></i> Phone: </span><a href="tel:+84 973 043 445">+84 973 043
+                        445</a></p>
+                    <p><span><i class="far fa-envelope"></i> Email: </span><a
+                        href="mailto:happyfarm@support.com">happyfarm@support.com</a></p>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="head-footer-title">
+                    <h2>Recent post</h2>
+                  </div>
+                  <div class="head-footer-recent">
+                    <div class="row">
+                      <div class="col-4">
+                        <img src="/img/hai-tu.jpg" alt="" class="w-100">
+                      </div>
+                      <div class="col-8">
+                        <a href="">
+                          <p>Chào mừng Hải Tú đến với tiệm !</p>
+                        </a>
+                        <small>Jan 20, 2001</small>
+                      </div>
+                      <div class="col-4">
+                        <img src="/img/tbt.jpg" alt="" class="w-100">
+                      </div>
+                      <div class="col-8">
+                        <a href="">
+                          <p>Chào mừng Chiều Bảo Thâm đến với tiệm !</p>
+                        </a>
+                        <small>Jan 20, 2001</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="head-footer-title">
+                    <h2>Photo in instagram</h2>
+                  </div>
+                  <div class="head-footer-title-instagram">
+                    <div class="row">
+                      <div class="col-lg-4 col-6">
+                        <a href=""><img src="img/insta.jpg" alt="" class="w-100"></a>
+                      </div>
+                      <div class="col-lg-4 col-6">
+                        <a href=""><img src="img/insta1.jpg" alt="" class="w-100"></a>
+                      </div>
+                      <div class="col-lg-4 col-6">
+                        <a href=""><img src="img/insta2.png" alt="" class="w-100"></a>
+                      </div>
+                      <div class="col-lg-4 col-6">
+                        <a href=""><img src="img/insta3.jpeg" alt="" class="w-100"></a>
+                      </div>
+                      <div class="col-lg-4 col-6">
+                        <a href=""><img src="img/insta4.jpeg" alt="" class="w-100"></a>
+                      </div>
+                      <div class="col-lg-4 col-6">
+                        <a href=""><img src="img/insta5.jpg" alt="" class="w-100"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <div class="middle-footer">
+                <div class="row">
+                  <div class="col-3">
+                    <p>Enter your email to get our</p>
+                    <h3>Recipe of the day</h3>
+                  </div>
+                  <div class="col-9">
+                    <div class="input-group mt-4">
+                      <input type="text" class="form-control" placeholder="Enter your email"
+                        aria-label="Recipient's username" aria-describedby="basic-addon2">
+                      <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button">Submit <span
+                            style="padding-left: 10px;"></span><i class="fas fa-arrow-right"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="foot-footer">
+            <div class="container">
+              <div class="row justify-content-between">
+                <div class="col-md-4">
+                  <p class="copy-right">Copyright © 2019 Bakery - Designed by ThemeMu</p>
+                </div>
+                <div class="col-md-5 text-right">
+                  <div class="else">
+                    <a href="">Contact</a><span style="padding-left: 20px;"></span>
+                    <a href="">Site map</a><span style="padding-left: 20px;"></span>
+                    <a href="">Policy</a><span style="padding-left: 20px;"></span>
+                    <a href="">Term of Use Privacy</a><span style="padding-left: 20px;"></span>
+                    <a href="">Pay</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </footer>
+    </div>
+</body>
+</html>
